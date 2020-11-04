@@ -1,0 +1,140 @@
+*{
+    font-family: 'Maven Pro', sans-serif;
+    color: blanchedalmond;
+}
+
+body {
+  background-color: black;
+}
+
+p{
+    margin-left: 5px;
+    line-height: 10px;
+}
+
+#h1{
+    background-color: rgba(186, 0, 192, 0.966);
+    color: white;
+}
+
+#h1-sm{
+  color: black;
+}
+
+#load{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#aboutMe{
+  text-align: center;
+  color: rgb(99, 92, 0);
+}
+
+/* .nav {
+  float: left;
+  display: flex;
+  margin: auto;
+  text-align: center;
+} */
+
+.nav-item {
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+.coin{
+  background-color: rgba(32, 23, 68, 0.904);
+  color: rgb(255, 255, 255);
+}
+
+.about-img{
+  width: 50px;
+  height: 50px;
+}
+
+.img1{
+    position: relative;
+    top: -80px;
+    left: 200px;
+}
+
+.img2{
+    margin-left: 10px;
+    height: 15px;
+    width: 15px;
+}
+
+.modal-body{
+    width: calc(100%);
+    position: relative;
+    text-align: center;
+}
+
+.mod-tog{
+    position: relative;
+    left: 300px;
+    top: 0px;
+    float: left;
+}
+
+.toggle{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.more{
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+.collapse{
+    width: calc(100%);
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.name{
+    position: relative;
+    left: -50px;
+}
+
+.info{
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.lds-circle {
+    display: inline-block;
+    transform: translateZ(1px);
+  }
+  .lds-circle > div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    background: rgb(199, 196, 0);
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+
+  @keyframes lds-circle {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+  }

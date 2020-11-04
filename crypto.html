@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="crypto.css">
+		<title> Crypto Web </title>
+    </head>
+	<body>
+        
+        <div class="container">
+            <div id="h1" class="row justify-content-start col-12">
+                <h1> 
+                    Crypto Coins.
+                    <small id="h1-sm"> Your online crypto update!</small> 
+                </h1>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <nav id="nav" class="row justify-content-start navbar">
+                <div class="col-sm-12 col-md-12 col-lg-6 navbar-nav navbar-expand-md">
+                    <a id="home" class="nav-item nav-link active" href="#">Home </a>
+                    <a id="live" class="nav-item nav-link active" href="#">Live Reports</a>
+                    <a id="about" class="nav-item nav-link active" href="#">About</a>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6"> 
+                    <form id="f1" class="nav-item form-inline my-0 my-lg-0">
+                        Search: &nbsp; <input id="search"class="form-control" type="search" placeholder="Currency" aria-label="Search" />
+                    </form>
+                </div>
+            </nav>
+
+            <div id="main" class="row col-12"> </div>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">You can only compare up to 5 coins! Choose which would you like to keep✨</h5>
+                        <button id="exit" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body"> </div>
+                    
+                    <div class="modal-footer">
+                        <button id="clear" type="button" class="btn btn-danger" data-dismiss="modal">Clear All</button>
+                        <button id="show" type="button" class="btn btn-primary"> Compare! </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <script src="crypto.js"> </script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="dark-theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
